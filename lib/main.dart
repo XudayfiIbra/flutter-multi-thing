@@ -1,3 +1,4 @@
+import 'package:fetching_api/django/home.dart';
 import 'package:fetching_api/pages/home_page.dart';
 import 'package:flutter/material.dart';
 
@@ -10,9 +11,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomePage()
+      home:  Home(),
     );
   }
 }
