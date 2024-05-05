@@ -7,7 +7,7 @@ class Home extends StatelessWidget {
   const Home({super.key});
 
   Future getProducts() async {
-    var response = await http.get(Uri.http('127.0.0.1:8000', 'api-products'));
+    var response = await http.get(Uri.parse('http://127.0.0.1:8000/api/tasks'));
     var Data = jsonDecode(response.body);
     print(Data);
   }
